@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         Log.w("MainActivity",menuItem3);
 
 
+        /**
+         * Get the TextView with findViewById.
+         * Use the getter called getText to get the text. Another method called toString must be used to convert the result (which is a CharSequence) returned from getText into a String. It’s complicated, we know. Sometimes you will need to massage the data you can get from a getter into the right type and the only way to know is by reading the documentation.
+         * Then use the method Log.v to print the log. You could have used any of the Logging methods to print the log, we chose verbose.
+         */
+
+
     }
 
 
