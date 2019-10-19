@@ -19,20 +19,20 @@ public class MainActivity extends AppCompatActivity {
     public void printToLogs(View view) {
         // Find first menu item TextView and print the text to the logs
         TextView tv = (TextView) findViewById(R.id.menu_item_1);
-        String message = "Captain's Log, Stardate 43125.8. We have entered a spectacular binary star system in the Kavis Alpha sector on a most critical mission of astrophysical research.";
-        Log.i("MainActivity.java", message);
+        String menuItem1 =  tv.getText().toString();
+        Log.i("MainActivity.java", menuItem1);
 
 
         // Find second menu item TextView and print the text to the logs
         TextView textv = (TextView) findViewById(R.id.menu_item_2);
-        String message2 = "This is it";
-        Log.v("MainActivity",message2);
+        String menuItem2 = textv.getText().toString();
+        Log.v("MainActivity",menuItem2);
 
 
         // Find third menu item TextView and print the text to the logs
         TextView tview = (TextView) findViewById(R.id.menu_item_3);
-        String message3 = "It has been done after all";
-        Log.w("MainActivity",message3);
+        String menuItem3 = tview.getText().toString();
+        Log.w("MainActivity",menuItem3);
 
 
     }
